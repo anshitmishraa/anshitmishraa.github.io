@@ -1,316 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Primary Meta Tags -->
+    <title>Anshit Mishra | Senior Software Engineer</title>
+    <meta name="title" content="Anshit Mishra | Senior Software Engineer">
+    <meta name="description" content="Senior Software Engineer at Tide specializing in distributed systems, high-throughput microservices, and FinTech infrastructure.">
+    <meta name="author" content="Anshit Mishra">
+    <meta name="keywords" content="Anshit Mishra, Senior Software Engineer, Tide, Jupiter, Distributed Systems, Spring Boot, Kafka, AWS, Kubernetes, FinTech, Java, Kotlin">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anshitmishraa.github.io/">
+    <meta property="og:title" content="Anshit Mishra | Senior Software Engineer">
+    <meta property="og:description" content="Senior Software Engineer at Tide specializing in distributed systems, high-throughput microservices, and FinTech infrastructure.">
+    <meta property="og:image" content="https://anshitmishraa.github.io/assets/img/profile.jpg">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://anshitmishraa.github.io/">
+    <meta property="twitter:title" content="Anshit Mishra | Senior Software Engineer">
+    <meta property="twitter:description" content="Senior Software Engineer at Tide specializing in distributed systems, high-throughput microservices, and FinTech infrastructure.">
+    <meta property="twitter:image" content="https://anshitmishraa.github.io/assets/img/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/profile.ico">
+
+    <!-- Boxicons (v2.1.4) -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Modern Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="assets/img/profile.ico"/>
-
-    <!-- =====BOX ICONS & FONT AWESOME===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-
-    <title>Anshit Mishra : Resume Website</title>
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <!-- To Enable Icon -->
-            <!-- <div>
-                <a href="#" class="nav__logo"><img style="width: 4.8rem;" src="assets/img/profile.jpg" alt=""></a>
-            </div> -->
+    <!-- ===== NAVIGATION HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="#home" class="nav-brand" aria-label="Anshit Mishra Portfolio Home">
+                <img src="assets/img/profile.jpg" alt="Anshit Mishra" class="nav-brand-img">
+                <span><span class="nav-brand-code">&lt;</span>Anshit Mishra<span class="nav-brand-code">/&gt;</span></span>
+            </a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active nav-icon"><i
-                                class='bx bx-home bx-sm'></i></a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link nav-icon"><i
-                                class='bx bx-user bx-sm'></i></a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link nav-icon"><i
-                                class='bx bx-star bx-sm'></i></a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link nav-icon"><i
-                                class='bx bx-category bx-sm'></i></a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link nav-icon"><i
-                                class='bx bx-message bx-sm'></i></a></li>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                        <i class='bx bx-sun' id="theme-icon"></i>
+                    </button>
+                    <a href="https://drive.google.com/file/d/1OhHA5Y8H0TlYhysBZA4j4FxCyv03GGyN/view" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm resume-link-btn">
+                        <i class='bx bx-file'></i> Resume
+                    </a>
+                </div>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <button class="nav-toggle-btn" id="nav-toggle" aria-label="Open mobile navigation menu">
                 <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+            </button>
+        </div>
     </header>
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Anshit<br></span><span
-                        class="typed-text"></span><span class="cursor typing">&nbsp;</span></h1>
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-status-pill" id="hero-status-pill">
+                        <span class="status-dot"></span> Senior Software Engineer @ Tide
+                    </div>
 
-                <a href="https://drive.google.com/file/d/1OhHA5Y8H0TlYhysBZA4j4FxCyv03GGyN/view" target="_blank" class="button">Show CV</a>
-            </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Anshit Mishra</span>
+                        <div class="hero-typewriter-container">
+                            <span id="hero-typewriter"></span><span class="typewriter-cursor">&nbsp;</span>
+                        </div>
+                    </h1>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/anshitmishra/" target="_blank" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/anshitmishraa" target="_blank" class="home__social-icon"><i
-                        class='bx bxl-github'></i></a>
-                <a href="https://twitter.com/anshitmishraa" target="_blank" class="home__social-icon"><i
-                    class='bx bxl-twitter'></i></a>
-            </div>
-
-            <div class="home__img">
-                <img src="assets/img/profile.jpg" alt="Profile Image">
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About Me</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am Anshit Mishra</h2>
-                    <p class="about__text">
-                    <ul>
-                        <li style="margin-left: 0.9em;"><i class='bx bx-tag-alt'></i> <b>Birthday:</b> 21 July 2002</li>
-                        <li style="margin-left: 0.9em;"><i class='bx bx-tag-alt'></i> <b>City:</b> Bihar, India</li>
-                        <li style="margin-left: 0.9em;"><i class='bx bx-tag-alt'></i> <b>University:</b> Lovely Professional
-                            University</li>
-                        <li style="margin-left: 0.9em;"><i class='bx bx-tag-alt'></i> <b>Departmant:</b> Computer
-                            Engineering</li>
-                        <li style="margin-left: 0.9em;"><i class='bx bx-tag-alt'></i> <b>Degree:</b> Bachelor</li>
-                        <p style="margin-top: 10px;">
-                            As a Software Engineer at <b>Jupiter</b>, I specialize in optimizing the credit card onboarding experience and have actively 
-                            contributed to the <b>Rewards</b> and <b>PRO</b> teams by developing innovative features and resolving complex issues. 
-                            
-                            </br>
-                            </br>
-
-                            My technical expertise spans a diverse range of technologies, including <b>Java</b>, <b>Kotlin</b>, <b>AWS</b>, <b>PostgreSQL</b>, 
-                            <b>MongoDB</b>, <b>Spring Boot</b>, <b>Docker</b>, <b>Kafka</b>, <b>Redis</b>, <b>Kubernetes</b>, and <b>Python</b>. I am deeply passionate about 
-                            exploring and mastering emerging technologies to stay ahead in the field.  
-
-                            </br>
-                            </br>
-
-                            During my academic journey, I honed my problem-solving skills by participating in renowned programming contests such as <b>Google Code Jam</b> and <b>Facebook Hacker Cup</b>, 
-                            as well as coding platforms like <b>LeetCode</b>, <b>Codeforces</b>, and <b>CodeChef</b>. Additionally, I gained invaluable hands-on experience during my 
-                            <b>Software Engineering Internship at Jupiter Money</b>.  
-
-                            </br>
-                            </br>
-
-                            Driven by a passion for innovation, my goal is to design and deliver solutions that tackle real-world challenges and create meaningful 
-                            value for users. I firmly believe in continuous learning, teamwork, and the importance of building high-quality, user-focused products.  
-                        </p>
-                    </ul>
+                    <p class="hero-tagline" id="hero-tagline">
+                        Architecting resilient distributed systems, high-throughput FinTech microservices, and high-scale onboarding engines.
                     </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class='bx bx-envelope'></i> Get in Touch
+                        </a>
+                        <a href="#experience" class="btn btn-secondary">
+                            <i class='bx bx-briefcase-alt-2'></i> View Experience
+                        </a>
+                        <a href="https://drive.google.com/file/d/1OhHA5Y8H0TlYhysBZA4j4FxCyv03GGyN/view" target="_blank" rel="noopener noreferrer" class="btn btn-outline resume-link-btn">
+                            <i class='bx bx-download'></i> Download CV
+                        </a>
+                    </div>
+
+                    <div class="hero-socials" id="hero-socials">
+                        <!-- Populated dynamically from data.js -->
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-card">
+                            <img src="assets/img/profile.jpg" alt="Anshit Mishra Portrait" class="avatar-img" id="hero-avatar-img">
+                            <div class="avatar-badge-float">
+                                <i class='bx bx-code-block avatar-badge-icon'></i>
+                                <div class="avatar-badge-text">
+                                    <h4>Senior SWE @ Tide</h4>
+                                    <p>FinTech & Distributed Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-
-            <div>
-                <h2 class="skills__subtitle">My Skills</h2>
-                <p class="skills__text">
-                    Below you can review which languages ​​I work with and which frameworks I use.</p>
-                <!-- Start -->
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-code-alt skills__icon'></i>
-                        <span class="skills__name">Programming Languages<span class="detail_skills">C++, Java, Python, Scala, Kotlin, JavaScript</span></span>
-                    </div>
-                </div>
-                <!-- End -->
-
-                <!-- Start -->
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-python bx-md skills__icon'></i>
-                        <span class="skills__name">Backend Development<span class="detail_skills">Spring Boot, Kafka, Redis, AWS SQS, Spinnaker, Docker, Kubernetes</span></span>
-                    </div>
-                </div>
-                <!-- End -->
-
-                <!-- Start -->
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-data skills__icon'></i>
-                        <span class="skills__name">Databases<span class="detail_skills">Postgres SQL, MongoDB</span></span>
-                    </div>
-                </div>
-                <!-- End -->
-
-                <!-- Start -->
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-cloud skills__icon'></i>
-                        <span class="skills__name">Cloud & DevOps<span class="detail_skills">AWS EC2, Kubernetes, Docker, Spinnaker</span></span>
-                    </div>
-                </div>
-                <!-- End -->
-
-                <!-- Start -->
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-shield skills__icon'></i>
-                        <span class="skills__name">Security & Encryption<span class="detail_skills">PGP Encryption, Secure APIs</span></span>
-                    </div>
-                </div>
-                <!-- End -->
-
-            </div>
-
-            <div>
-                <img src="assets/img/skills.jpeg" alt="" class="skills__img">
-            </div>
-        </div>
-    </section>
-
-        <!--===== PROJECT (UPDATED BASED ON GITHUB REPO, RESUME, AND WORK EXPERIENCE)=====-->
-    <section class="work section" id="work">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="work__container bd-grid">
-
-            <!-- NEW START-->
-            <div class="work__card">
-                <a href="https://github.com/anshitmishraa/job-executors" target="_blank" class="work__card-link">
-                    <h3 class="work__card-title">
-                        <i class="fas fa-tasks"></i> Job Executors 
-                        <span class="work__badge">Python</span>
-                    </h3>
-                </a>
-                <p class="work__card-description">
-                    A dynamic job scheduling application built with <strong>Python’s Background Scheduler</strong>, designed for efficient handling of code-based, script-based, and event-based tasks.
-                </p>
-                <ul class="work__features">
-                    <li><i class="fas fa-database"></i> Robust database management using SQLAlchemy ORM</li>
-                    <li><i class="fas fa-check-circle"></i> Reliable data validation powered by Pydantic</li>
-                    <li><i class="fas fa-cogs"></i> Comprehensive job management for various workflows</li>
-                </ul>
-                <div class="work__footer">
-                    <a href="https://github.com/anshitmishraa/job-executors" target="_blank" class="work__cta">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        <!-- ===== STATS BAR ===== -->
+        <section class="container" style="padding-top: 0; padding-bottom: 2rem;">
+            <div class="stats-bar">
+                <div class="stats-grid" id="stats-grid">
+                    <!-- Populated dynamically from data.js -->
                 </div>
             </div>
-            
-            
-            <div class="work__card">
-                <a href="https://github.com/anshitmishraa/vendor-hub" target="_blank" class="work__card-link">
-                    <h3 class="work__card-title">
-                        <i class="fas fa-cogs"></i> Vendor Hub 
-                        <span class="work__badge">Spring Boot</span>
-                    </h3>
-                </a>
-                <p class="work__card-description">
-                    A Spring Boot-based vendor management system designed to automate vendor data processes, improve scalability, and ensure data integrity. Key features include:
-                </p>
-                <ul class="work__features">
-                    <li><i class="fas fa-database"></i> CRUD operations for managing vendor data</li>
-                    <li><i class="fas fa-check-circle"></i> Data validation to ensure consistency</li>
-                    <li><i class="fas fa-sort"></i> Pagination for efficient data handling</li>
-                </ul>
-                <div class="work__footer">
-                    <a href="https://github.com/anshitmishraa/vendor-hub" target="_blank" class="work__cta">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-user'></i> 01. Profile</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about building resilient distributed systems and user-centric financial products.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-card">
+                        <img src="assets/img/about.jpg" alt="Anshit Mishra" id="about-avatar-img">
+                    </div>
+
+                    <div class="about-content">
+                        <div id="about-paragraphs">
+                            <!-- Populated dynamically from data.js -->
+                        </div>
+
+                        <div class="about-quickfacts" id="about-quickfacts">
+                            <!-- Populated dynamically from data.js -->
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="work__card">
-                <a href="https://github.com/anshitmishraa/Password-Generator" target="_blank" class="work__card-link">
-                    <h3 class="work__card-title">
-                        <i class="fas fa-key"></i> Password Generator 
-                        <span class="work__badge">JavaScript</span>
-                    </h3>
-                </a>
-                <p class="work__card-description">
-                    A customizable password generator built with <strong>JavaScript, HTML, and CSS</strong>, designed to help users create secure passwords. Features include:
-                </p>
-                <ul class="work__features">
-                    <li><i class="fas fa-cogs"></i> Customizable options such as password length and inclusion of special characters</li>
-                    <li><i class="fas fa-lock"></i> Generates secure, random passwords for enhanced security</li>
-                    <li><i class="fas fa-eye-slash"></i> Option to view or hide the generated password</li>
-                </ul>
-                <div class="work__footer">
-                    <a href="https://github.com/anshitmishraa/Password-Generator" target="_blank" class="work__cta">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        <!-- ===== WORK EXPERIENCE SECTION ===== -->
+        <section class="section" id="experience" style="background-color: var(--bg-surface); transition: background-color var(--transition-normal);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-briefcase'></i> 02. Career Timeline</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">Proven track record of engineering high-scale, resilient FinTech architectures.</p>
+                </div>
+
+                <div class="timeline" id="experience-timeline">
+                    <!-- Populated dynamically from data.js -->
                 </div>
             </div>
-            
-        </div>
-    </section>
+        </section>
 
-        
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact & Follow Me</h2>
+        <!-- ===== SKILLS SECTION ===== -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-layer'></i> 03. Tech Stack</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Battle-tested frameworks, distributed messaging protocols, databases, and cloud infrastructure.</p>
+                </div>
 
-            <div class="contact__container bd-grid">
-                <div class="wrapper">
-                    <div class="buttons">
-                        <div class="icons"><a href="https://www.linkedin.com/in/anshitmishra/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-                        <span><a href="https://www.linkedin.com/in/anshitmishra/" target="_blank">LinkedIn</a></span>
-                    </div>
-                    <div class="buttons">
-                        <div class="icons"><a href="https://www.instagram.com/anshitmishraa/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-                        <span><a href="https://www.instagram.com/anshitmishraa/" target="_blank">Instagram</a></span>
-                    </div>
-                    <div class="buttons">
-                        <div class="icons"><a href="https://github.com/anshitmishraa" target="_blank"><i class="fab fa-github"></i></a></div>
-                        <span><a href="https://github.com/anshitmishraa" target="_blank">Github</a></span>
-                    </div>
-                    <div class="buttons">
-                        <div class="icons"><a href="https://twitter.com/anshitmishraa" target="_blank"><i class="fab fa-twitter"></i></a></div>
-                        <span><a href="https://twitter.com/anshitmishraa" target="_blank">Twitter</a></span>
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Populated dynamically from data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section class="section" id="projects" style="background-color: var(--bg-surface); transition: background-color var(--transition-normal);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-code-alt'></i> 04. Engineering Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Selected open-source systems, background worker frameworks, and utilities.</p>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Populated dynamically from data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ACHIEVEMENTS, CERTS & EDUCATION SECTION ===== -->
+        <section class="section" id="achievements">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-trophy'></i> 05. Milestones</span>
+                    <h2 class="section-title">Achievements & Credentials</h2>
+                    <p class="section-subtitle">Competitive programming accomplishments, professional certifications, and academic background.</p>
+                </div>
+
+                <div class="achievements-grid" id="achievements-grid">
+                    <!-- Populated dynamically from data.js -->
+                </div>
+
+                <div class="credentials-row">
+                    <div class="credential-block">
+                        <div class="credential-block-header">
+                            <i class='bx bx-graduation'></i>
+                            <h3>Education</h3>
+                        </div>
+                        <div id="education-list">
+                            <!-- Populated dynamically from data.js -->
+                        </div>
                     </div>
 
+                    <div class="credential-block">
+                        <div class="credential-block-header">
+                            <i class='bx bx-certification'></i>
+                            <h3>Certifications</h3>
+                        </div>
+                        <div id="certs-list">
+                            <!-- Populated dynamically from data.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="section" id="contact" style="background-color: var(--bg-surface); transition: background-color var(--transition-normal);">
+            <div class="container">
+                <div class="contact-card">
+                    <span class="section-tag"><i class='bx bx-message-dots'></i> 06. Connect</span>
+                    <h2 class="contact-title">Let's Build Something Impactful</h2>
+                    <p class="contact-desc">
+                        Whether you want to discuss distributed systems, FinTech architecture, high-throughput microservices, or explore new opportunities, my inbox is always open.
+                    </p>
+
+                    <div class="contact-actions">
+                        <button class="copy-email-btn" id="copy-email-btn" aria-label="Copy email address to clipboard">
+                            <i class='bx bx-copy'></i>
+                            <span id="copy-email-text">anshitmishraa@gmail.com</span>
+                            <span class="copy-tooltip" id="copy-tooltip">Click to copy</span>
+                        </button>
+
+                        <a href="mailto:anshitmishraa@gmail.com" class="btn btn-primary" id="send-mail-btn">
+                            <i class='bx bx-send'></i> Send Email
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/anshitmishra/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class='bx bxl-linkedin'></i> Connect on LinkedIn
+                        </a>
+                    </div>
+
+                    <div class="contact-social-grid" id="contact-social-grid">
+                        <!-- Populated dynamically from data.js -->
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!--===== FOOTER =====-->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <p class="footer__title">Anshit Mishra</p>
-
-        <div class="footer__social">
-            <a href="https://www.linkedin.com/in/anshitmishra/" target="_blank" class="footer__icon"><i
-                    class='bx bxl-linkedin'></i></a>
-            <a href="https://www.instagram.com/anshitmishraa/" target="_blank" class="footer__icon"><i
-                    class='bx bxl-instagram'></i></a>
-            <a href="https://github.com/anshitmishraa" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>        
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="nav-brand-code">&lt;</span>Anshit Mishra<span class="nav-brand-code">/&gt;</span>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year">2026</span> Anshit Mishra. All rights reserved. Crafted with clean scalable architecture.
+            </div>
+            <a href="#home" class="back-to-top-btn" id="back-to-top" title="Back to top" aria-label="Back to top">
+                <i class='bx bx-chevron-up'></i>
+            </a>
         </div>
-        <p>&#169; 2023 copyright all right reserved, edited by Anshit Mishra.</p>
     </footer>
-    <!--===== DARK MODE =====-->
 
-    <!--===== LOADER =====-->
-    <!-- TODO :: ADD LOADER FOR DYNAMIC WEBSITE-->
-
-    <!--===== SCROLL REVEAL =====-->
+    <!-- ===== SCRIPTS ===== -->
+    <!-- ScrollReveal CDN -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
+    <!-- Portfolio Data (Central configuration) -->
+    <script src="assets/js/data.js"></script>
+    <!-- Main Interactive Script -->
     <script src="assets/js/main.js"></script>
-    <!-- ==== SLIDER ====-->
-    <script src="assets/js/slider.js"></script>
-    <!-- ==== TYPED JS ====-->
-    <script src="assets/js/typer.js"></script>
-
 </body>
 
 </html>
